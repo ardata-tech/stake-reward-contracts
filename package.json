@@ -1,0 +1,24 @@
+{
+    "name": "stake-reward-contract",
+    "version": "1.0.0",
+    "description": "A Simple contract projects for staking and minting of rewards for a given holders of a custom BEP20 token",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "deploy-test": "truffle migrate --network bscTestnet --reset && truffle run verify EDIPI StakerMinter --network bscTestnet",
+        "deploy-main": "truffle migrate --network bscMainnet --reset && truffle run verify EDIPI StakerMinter --network bscMainnet"
+    },
+    "keywords": [],
+    "author": "Alvin Reyes",
+    "license": "MIT",
+    "dependencies": {
+        "@openzeppelin/contracts": "^3.1.0",
+        "@openzeppelin/test-helpers": "^0.5.10",
+        "@pancakeswap/pancake-swap-lib": "^0.0.4",
+        "@truffle/hdwallet-provider": "^1.2.2",
+        "dotenv": "^8.2.0",
+        "truffle-plugin-verify": "^0.5.4"
+    }
+}
