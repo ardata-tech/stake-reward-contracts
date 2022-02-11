@@ -14,7 +14,7 @@
     "author": "Alvin Reyes",
     "license": "MIT",
     "dependencies": {
-        "@openzeppelin/contracts": "^3.4.2",
+        "@openzeppelin/contracts": "^4.4.2",
         "@openzeppelin/test-helpers": "^0.5.10",
         "@pancakeswap/pancake-swap-lib": "^0.0.4",
         "@truffle/hdwallet-provider": "^1.2.2",
